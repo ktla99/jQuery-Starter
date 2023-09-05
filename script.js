@@ -5,7 +5,11 @@ $(document).ready(function() {
 // or
 /* $("#third").hide(); */
     $("#btn_hide").click(function() {
-        $(".second").slideToggle("slow");
+        $(".box").animate({
+            width: "200px",
+            height: "200px",
+            fontSize: "20px",
+        });
     });
     /* event.which shows what number of the button that was clicked*/
     $("body").keydown(function(event) {
