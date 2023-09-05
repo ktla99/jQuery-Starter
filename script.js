@@ -6,7 +6,7 @@ $(document).ready(function() {
 /* $("#third").hide(); */
     $("#btn_hide").click(function() {
         $(".box").animate({
-            width: "200px",
+            width: "+=200px",
             height: "200px",
             fontSize: "20px",
         });
