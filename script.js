@@ -9,7 +9,9 @@ $(document).ready(function() {
             width: "+=200px",
             height: "200px",
             fontSize: "20px",
-        });
+        },
+        "slow"
+        );
     });
     /* event.which shows what number of the button that was clicked*/
     $("body").keydown(function(event) {
