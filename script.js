@@ -5,14 +5,12 @@ $(document).ready(function() {
 // or
 /* $("#third").hide(); */
     $("#btn_hide").click(function() {
-        $(".second").fadeTo("slow", 0.5);
-    })
+        $(".second").slideToggle("slow");
+    });
     /* event.which shows what number of the button that was clicked*/
     $("body").keydown(function(event) {
         if(event.which === 72) {
-            $(".second").toggle(2000, function() {
-                console.log("Task Completed!");
-            })
+            $(".second").hide();;
             // press H to hide it
         }
         if(event.which === 83) {
@@ -20,4 +18,4 @@ $(document).ready(function() {
             // press S to be visible
         }
     });
-})
+});
