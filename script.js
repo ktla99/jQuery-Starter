@@ -13,7 +13,7 @@ $("#btn_hide").click(function() {
 
 $("body").keydown(function(event) {
     if(event.which === 72) {
-        $(".second").hide(2000, function() {
+        $(".second").toggle(2000, function() {
             console.log("Task Completed!");
         })
         // press H to hide it
