@@ -5,7 +5,7 @@ $(document).ready(function() {
 // or
 /* $("#third").hide(); */
     $("#btn_hide").click(function() {
-        $(".second").fadeOut();
+        $(".second").fadeTo("slow", 0.5);
     })
     /* event.which shows what number of the button that was clicked*/
     $("body").keydown(function(event) {
