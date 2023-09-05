@@ -8,6 +8,14 @@ $("#btn_hide").click(function() {
 })
 */
 
+/* event.which shows what number of the button that was clicked*/
 $("body").keydown(function(event) {
-    console.log(event.which);
-})
+    if(event.which === 72) {
+        $(".second").hide()
+        // press H to hide it
+    }
+    if(event.which === 83) {
+        $(".second").show()
+        // press S to be visible
+    }
+});
