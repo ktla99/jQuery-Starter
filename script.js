@@ -5,13 +5,7 @@ $(document).ready(function() {
 // or
 /* $("#third").hide(); */
     $("#btn_hide").click(function() {
-        $(".box").animate({
-            width: "+=200px",
-            height: "200px",
-            fontSize: "20px",
-        },
-        "slow"
-        );
+        console.log($(".second").text())
     });
     /* event.which shows what number of the button that was clicked*/
     $("body").keydown(function(event) {
