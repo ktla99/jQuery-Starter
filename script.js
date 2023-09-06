@@ -6,6 +6,7 @@ $(document).ready(function() {
 /* $("#third").hide(); */
     $("#btn_hide").click(function() {
         // $(".second").text("This is jQuery tutorial");
+        $(".second").html("<em>This is jQuery tutorial</em>");
         console.log($(".second").text());
         console.log($(".second").html());
     });
