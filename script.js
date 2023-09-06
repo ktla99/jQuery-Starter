@@ -6,7 +6,7 @@ $(document).ready(function() {
 /* $("#third").hide(); */
     $("#btn_hide").click(function() {
         let color = $("div.box").css("background-color");
-        $("#third").css("color", color);
+        $("#third").css({"color": color, "background-color": "black"});
     });
     /* event.which shows what number of the button that was clicked*/
     $("body").keydown(function(event) {
