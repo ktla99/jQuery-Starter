@@ -5,7 +5,8 @@ $(document).ready(function() {
 // or
 /* $("#third").hide(); */
     $("#btn_hide").click(function() {
-        $(".second").toggleClass("box");
+        let color = $("div.box").css("background-color");
+        console.log(color);
     });
     /* event.which shows what number of the button that was clicked*/
     $("body").keydown(function(event) {
