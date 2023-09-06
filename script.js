@@ -5,8 +5,9 @@ $(document).ready(function() {
 // or
 /* $("#third").hide(); */
     $("#btn_hide").click(function() {
-        $(".second").text("This is jQuery tutorial");
-        console.log($(".second").text())
+        // $(".second").text("This is jQuery tutorial");
+        console.log($(".second").text());
+        console.log($(".second").html());
     });
     /* event.which shows what number of the button that was clicked*/
     $("body").keydown(function(event) {
