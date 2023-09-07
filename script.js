@@ -13,4 +13,8 @@ $(document).ready(function() {
     $('input').change(function() {
         console.log($(this).val());
     })
+
+    $("#registration_form").submit(function() {
+        console.log("Form successfully submit!");
+    })
 });
