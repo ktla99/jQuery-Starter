@@ -9,4 +9,8 @@ $(document).ready(function() {
     $('input').blur(function() {
         $(this).css("background-color", "");
     })
+    
+    $('input').change(function() {
+        console.log($(this).val());
+    })
 });
