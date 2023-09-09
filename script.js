@@ -9,7 +9,14 @@ $(document).ready(function() {
         });
         */
        $.get("https://jsonplaceholder.typicode.com/users", 
-       function(data, status) {
-        console.log(data, status);
-       })
+            function(data, status) {
+                console.log(data, status);
+            }
+       );
+
+       $.post("https://jsonplaceholder.typicode.com/posts", 
+       {title: "This is title", body: "This is body"}, 
+        function(data, status) {
+            console.log(data, status);
+    })
     });
